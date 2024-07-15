@@ -5,11 +5,46 @@ body {
   line-height: 1.6;
   color: white;
   background-color: black;
-
 }
-h1{
+.header {
+  background-color: black;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  max-height: 300px; 
+}
+.nav-links {
+  list-style: none;
+  display: flex;
   margin: 0;
-  color: #4ef037;
+  padding: 0;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #cbf078;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .nav-links {
+      flex-direction: column;
+      width: 100%;
+  }
+  .nav-links li {
+      margin: 10px 0;
+  }
 }
 header {
   color: #233142;
@@ -23,24 +58,25 @@ section {
 }
 
 h2 {
-  color: #1f5b1f;
+  color: #cbf078;
+  font-size: 20px;
 }
 .foundingStory{
   text-align: left;
-  font-size: 20px;
-  font-family: cursive;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
 }
 .get-involved{
   text-align: left;
-  font-size: 20px;
-  font-family: cursive;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
 }
 ul {
   list-style-type: circle;
   padding: 0;
   text-align: left;
-  font-size: 20px;
-  font-family: cursive;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
 }
 
 ul li {
@@ -56,28 +92,26 @@ button{
   display: block;
   margin: 20px auto;
   border: 1px solid #fff;
-  background: #4ef037;
+  background: #cbf078;
   font-size: 16px;
   line-height: 22px;
   padding: 16px 24px;
   border-radius: 30px;
   transition: all 200ms ease-in-out;
-  box-shadow:0 16px 41px rgba(78, 240, 55, 1);
+  box-shadow:0 16px 41px rgba(203, 240, 120, 1);
   text-decoration: none;
 }
 .button:hover {
   background:#fff;
-  color: #4ef037;
+  color: #cbf078;
   cursor: pointer;
 }
 .contact-details {
   display: none;
   text-align:center;
-  font-size: 15px;
+  font-size: 16px;
   margin: 0;
   padding: 20px;
   border-radius: 5px;
   list-style: none;
 }
-
-
